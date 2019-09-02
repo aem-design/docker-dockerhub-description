@@ -14,7 +14,6 @@ before_install:
 install:
   - docker build --pull -t $IMAGE:$IMAGE_VERSION .
   - docker tag $IMAGE:$IMAGE_VERSION $IMAGE:latest
-  - docker tag $IMAGE:$IMAGE_VERSION $IMAGE:$CONTAINER_OUTPUT
   - docker images
 
 #test
