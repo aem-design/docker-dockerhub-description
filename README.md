@@ -22,6 +22,13 @@ docker run --rm \
     aemdesign/dockerhub-description
 ```
 
+# Container Debug
+
+```bash
+docker run -it --rm -v $(pwd):/data --entrypoint=""  aemdesign/dockerhub-description /bin/sh
+```
+
+
 ## Script Parameters
 
 This image uses environment variables for configuration.

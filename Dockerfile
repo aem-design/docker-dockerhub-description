@@ -7,6 +7,10 @@ LABEL   os="centos 7" \
 
 MAINTAINER  devops <devops@aem.design>
 
-COPY dockerhub.sh /dockerhub.sh
+WORKDIR /app
 
-ENTRYPOINT ["/dockerhub.sh"]
+RUN apk add --no-cache curl
+
+COPY dockerhub.sh ./dockerhub.sh
+
+ENTRYPOINT ["/bin/sh","./app/dockerhub.sh"]
