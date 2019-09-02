@@ -6,11 +6,11 @@ README_DEFAULT="/data/README.md"
 USERNAME="${1?Need username}"
 PASSWORD="${2?Need password}"
 REPO="${3?Need repo name}"
-README="${4:-$README}"
+README="${4:-$README_DEFAULT}"
 API_URL="${5:-$API_URL_DEFAULT}"
 
 if [[ ! -f "$README_DEFAULT" ]]; then
-	echo "Readme not found at: $README_DEFAULT"
+	echo "Readme not found at: $README"
 	exit 1
 fi
 
