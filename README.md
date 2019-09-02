@@ -15,7 +15,7 @@ This is docker image based on `alpine`
 
 ```bash
 docker run --rm \
-    -v $(pwd)/readme.md:/README.md \
+    -v $(pwd):/data/ \
     aemdesign/dockerhub-description \
     "$DOCKERHUB_USERNAME" \
     "$DOCKERHUB_PASSWORD" \
@@ -25,7 +25,7 @@ docker run --rm \
 # Container Debug
 
 ```bash
-docker run -it --rm -v $(pwd):/data --entrypoint=""  aemdesign/dockerhub-description /bin/sh
+`docker run -it --rm -v $(pwd):/data --entrypoint=""  aemdesign/dockerhub-description /bin/sh`
 ```
 
 
