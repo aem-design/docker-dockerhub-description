@@ -13,4 +13,4 @@ RUN apk add --no-cache curl
 
 COPY dockerhub.sh ./dockerhub.sh
 
-ENTRYPOINT ["/bin/sh","./app/dockerhub.sh"]
+ENTRYPOINT ["/bin/sh","/app/dockerhub.sh"]
