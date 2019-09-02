@@ -16,10 +16,10 @@ This is docker image based on `alpine`
 ```bash
 docker run --rm \
     -v $(pwd)/readme.md:/README.md \
-    $DOCKERHUB_USERNAME \
-    $DOCKERHUB_PASSWORD \
-    $DOCKERHUB_REPO \
-    aemdesign/dockerhub-description
+    aemdesign/dockerhub-description \
+    "$DOCKERHUB_USERNAME" \
+    "$DOCKERHUB_PASSWORD" \
+    "$DOCKERHUB_REPO"
 ```
 
 # Container Debug
