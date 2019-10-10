@@ -1,6 +1,6 @@
 ## CentOS 7 with Dockerhub Readme Update Script
 
-[![build_status](https://travis-ci.org/aem-design/dockerhub-description.svg?branch=master)](https://travis-ci.org/aem-design/dockerhub-description) 
+[![build_status](https://travis-ci.org/aem-design/docker-dockerhub-description.svg?branch=master)](https://travis-ci.org/aem-design/docker-dockerhub-description) 
 [![github license](https://img.shields.io/github/license/aem-design/dockerhub-description)](https://github.com/aem-design/dockerhub-description) 
 [![github issues](https://img.shields.io/github/issues/aem-design/dockerhub-description)](https://github.com/aem-design/dockerhub-description) 
 [![github last commit](https://img.shields.io/github/last-commit/aem-design/dockerhub-description)](https://github.com/aem-design/dockerhub-description) 
