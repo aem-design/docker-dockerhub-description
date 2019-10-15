@@ -13,6 +13,21 @@ This is docker image based on `alpine`
 
 # Quick Upload to Github 
 
+## Parameters
+
+1. DOCKERHUB_USERNAME user who has access to write to repository
+2. DOCKERHUB_PASSWORD user password
+3. DOCKERHUB_REPO should be in format `user/repository` ex [aemdesign/dockerhub-description](https://hub.docker.com/r/aemdesign/dockerhub-description)
+4. PATH TO README is optional with default ./README.md)
+
+## Volumes
+
+1. You need to mount directory with readme into the `/data/`
+
+## Commands
+
+To upload README.md in current directory run following:
+
 ```bash
 docker run --rm \
     -v $(pwd):/data/ \
@@ -20,6 +35,18 @@ docker run --rm \
     "$DOCKERHUB_USERNAME" \
     "$DOCKERHUB_PASSWORD" \
     "$DOCKERHUB_REPO"
+```
+
+If you need to specify location of readme file run:
+
+```bash
+docker run --rm \
+    -v $(pwd):/data/ \
+    aemdesign/dockerhub-description \
+    "$DOCKERHUB_USERNAME" \
+    "$DOCKERHUB_PASSWORD" \
+    "$DOCKERHUB_REPO" \ 
+    "/path/to/README.md"
 ```
 
 # Container Debug
