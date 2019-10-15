@@ -9,7 +9,7 @@ REPO="${3?Need repo name}"
 README="${4:-$README_DEFAULT}"
 API_URL="${5:-$API_URL_DEFAULT}"
 
-if [[ ! -f "$README_DEFAULT" ]]; then
+if [[ ! -f "$README" ]]; then
 	echo "Readme not found at: $README"
 	exit 1
 fi
