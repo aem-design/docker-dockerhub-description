@@ -18,11 +18,7 @@ This is docker image based on `alpine`
 1. DOCKERHUB_USERNAME user who has access to write to repository
 2. DOCKERHUB_PASSWORD user password
 3. DOCKERHUB_REPO should be in format `user/repository` ex [aemdesign/dockerhub-description](https://hub.docker.com/r/aemdesign/dockerhub-description)
-4. PATH TO README is optional with default ./README.md)
-
-## Volumes
-
-1. You need to mount directory with readme into the `/data/`
+4. PATH TO README is optional with default `/data/README.md`, you need to mount directory with readme into the `/data/` volume
 
 ## Commands
 
@@ -46,7 +42,7 @@ docker run --rm \
     "$DOCKERHUB_USERNAME" \
     "$DOCKERHUB_PASSWORD" \
     "$DOCKERHUB_REPO" \ 
-    "/path/to/README.md"
+    "/path/to/parent/with/readme/"
 ```
 
 # Container Debug
